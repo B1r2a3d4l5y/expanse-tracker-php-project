@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense tracker</title>
+    <style>
+        form {
+            
+            border: 15px solid blue;
+            background-color: lightblue;
+            border-radius: 10px;
+            border-top: 5px ;
+            border-left: 5px;
+            border-right: 5px;
+            border-bottom: 5px;
+        
+         
+
+        }
+        .signup{
+            font-size: medium;
+            padding: 5px;
+            margin: 5px;
+        }
+        .register {
+            color: blue
+        }
+        .login {
+            float:  right;
+            color: blue;
+        }
+
+
+    </style>
+
+</head>
+<body>
+    <form action="includes/signup.php" method="POST">
+        <div class="col-sm-3">
+            <h2 class="signup">Signup</h2>
+            <br><br>
+            <input type="text" name="first" placeholder="FirstName">
+            <br><br>
+            <input type="text" name="last" placeholder="LastName">
+            <br><br>
+            <input type="email" name="email" placeholder="E-mail">
+            <br><br>
+            <input type="number" name="phonenumber" placeholder="Phonenumber">
+            <br><br>
+            <input type="password" name="pwd" placeholder="Password"> 
+            <br><br>
+            <input type="password" name="cpassword" placeholder="ConformPassword">
+            <br><br>
+            <button type="submit" name="register" class=" register btn btn-default">Register</button>
+            <button type="submit" name="login" class= " login btn btn-default">Login</button>
+    
+        </div>
+
+
+
+    </form>
+    
+</body>
+</html>
